@@ -75,6 +75,7 @@ PODS:
   - glog (0.3.5)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
+  - Pendo (2.18.2.6401)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -360,6 +361,9 @@ PODS:
     - React
   - RNGestureHandler (2.8.0):
     - React-Core
+  - RNPendoSdk (2.18.2):
+    - Pendo (~> 2.18.2)
+    - React
   - RNReanimated (2.12.0):
     - DoubleConversion
     - FBLazyVector
@@ -454,6 +458,7 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNPendoSdk (from `../node_modules/rn-pendo-sdk`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -473,6 +478,7 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - Pendo
     - SocketRocket
     - YogaKit
 
@@ -545,6 +551,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNPendoSdk:
+    :path: "../node_modules/rn-pendo-sdk"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -571,6 +579,7 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
+  Pendo: 73e325cbf0c98858f6197a5703e367a7669ef8b3
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: 21229f84411088e5d8538f21212de49e46cc83e2
   RCTTypeSafety: 62eed57a32924b09edaaf170a548d1fc96223086
@@ -600,6 +609,7 @@ SPEC CHECKSUMS:
   ReactCommon: c9246996e73bf75a2c6c3ff15f1e16707cdc2da9
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
+  RNPendoSdk: 2fbcd47359dcdf20930cec76c242b159be29ab79
   RNReanimated: 2a91e85fcd343f8af3c58d3425b99fdd285590a5
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608

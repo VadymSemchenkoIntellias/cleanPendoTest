@@ -3,6 +3,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+@import Pendo;
 
 #import <React/RCTAppSetupUtils.h>
 
@@ -26,6 +27,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 }
 @end
 #endif
+
 
 @implementation AppDelegate
 
@@ -58,6 +60,15 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    if ([[url scheme] containsString:@"pendo"]) {
+        [[PendoManager sharedManager] initWithUrl:url];
+        return YES;
+    }
+    //  your code here ...
+    return YES;
 }
 
 /// This method controls whether the `concurrentRoot`feature of React18 is turned on or off.
